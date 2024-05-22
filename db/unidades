@@ -1,0 +1,421 @@
+[{
+  "_id": {
+    "$oid": "664d01ef9e00135632d78686"
+  },
+  "nombre": "DESPACHO DEL ALCALDE",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d78687"
+  },
+  "nombre": "DIRECCION JURIDICA",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d78688"
+  },
+  "nombre": "DIRECCION AUDITORIA INTERNA",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d78689"
+  },
+  "nombre": "DIRECCION DE COODINACION Y RELACIONES INTERINSTITUCIONALES",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d7868a"
+  },
+  "nombre": "UNIDAD DE VENTANILLA UNICA",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d7868b"
+  },
+  "nombre": "UNIDAD DE COMUNICACIÓN E IMAGEN INSTITUCIONAL",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d7868c"
+  },
+  "nombre": "UNIDAD DE TRANSPARENCIA Y LUCHA CONTRA LA CORRUPCION",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d7868d"
+  },
+  "nombre": "SECRETARIA MUNICIPAL DE PLANIFICACIÓN Y DESARROLLO TERRITORIAL",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d7868e"
+  },
+  "nombre": "DIRECCION DE PLANIFICACION Y DESARROLLO INTEGRAL",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d7868f"
+  },
+  "nombre": "UNIDAD DE PROYECTOS DE PRE-INVERSION",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d78690"
+  },
+  "nombre": "UNIDAD DE PROGRAMACION DE OPERACIONES Y SEGUIMIENTO P.O.A.",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d78691"
+  },
+  "nombre": "UNIDAD DE PLANIFICACION ESTRATEGICA",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d78692"
+  },
+  "nombre": "DIRECCION DE CATASTRO MULTIFINALITARIO Y ADMINISTRACION DE TIERRAS",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d78693"
+  },
+  "nombre": "DIRECCION DE GESTION URBANA Y TERRITORIAL",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d78694"
+  },
+  "nombre": "UNIDAD DE SERVICIOS DE URBANISMO",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d78695"
+  },
+  "nombre": "UNIDAD DE ORDENAMIENTO TERRITORIAL",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d78696"
+  },
+  "nombre": "UNIDAD DE SANEAMIENTO DE BIENES INMUEBLES MUNICIPALES",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d78697"
+  },
+  "nombre": "SECRETARIA MUNICIPAL DE FINANZAS Y ADMINISTRACION",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d78698"
+  },
+  "nombre": "DIRECION DE ORGANIZACIÓN ADMINISTRATIVA Y RECURSOS HUMANOS",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d78699"
+  },
+  "nombre": "UNIDAD DE ADMINISTRACION Y DESARROLLO DE PERSONAL",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d7869a"
+  },
+  "nombre": "DIRECCION DE FINANZAS",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d7869b"
+  },
+  "nombre": "UNIDAD DE TESORERIA Y CREDITO PUBLICO",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d7869c"
+  },
+  "nombre": "UNIDAD DE CONTABILIDAD",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d7869d"
+  },
+  "nombre": "UNIDAD DE PRESUPUESTOS",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d7869e"
+  },
+  "nombre": "DIRECTOR (A) ADMINISTRATIVO",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d7869f"
+  },
+  "nombre": "UNIDAD DE ARCHIVOS INSTITUCIONALES",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786a0"
+  },
+  "nombre": "UNIDAD DE CONTRATACIONES",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786a1"
+  },
+  "nombre": "UNIDAD DE ALMACENES",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786a2"
+  },
+  "nombre": "UNIDAD DE SERVICIOS GENERALES",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786a3"
+  },
+  "nombre": "UNIDAD DE ACTIVOS FIJOS",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786a4"
+  },
+  "nombre": "DIRECCION DE INGRESOS Y SERVICIOS MUNICIPALES",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786a5"
+  },
+  "nombre": "UNIDAD DE COBRANZA COACTIVA",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786a6"
+  },
+  "nombre": "UNIDAD DE FISCALIZACION TRIBUTARIA",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786a7"
+  },
+  "nombre": "UNIDAD DE VEHICULOS",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786a8"
+  },
+  "nombre": "UNIDAD DE BIENES INMUEBLES",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786a9"
+  },
+  "nombre": "UNIDAD DE ADMINISTRACION DE SERVICIOS MUNICIPALES",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786aa"
+  },
+  "nombre": "UNIDAD DE ACTIVIDADES ECONOMICAS",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786ab"
+  },
+  "nombre": "UNIDAD DE GOBIERNO ELECTRONICO",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786ac"
+  },
+  "nombre": "SECRETARIA MUNICIPAL DE INFRAESTRUCTURA Y SERVICIOS",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786ad"
+  },
+  "nombre": "DIRECCION DE OBRAS PUBLICAS Y SUPERVISION",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786ae"
+  },
+  "nombre": "UNIDAD DE OBRAS PUBLICAS",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786af"
+  },
+  "nombre": "UNIDAD DE PLANTA DE ASFALTO Y SEÑALIZACION VIAL",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786b0"
+  },
+  "nombre": "DIRECCION DE TRANSPORTES Y SERVICIOS ELECTRICOS",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786b1"
+  },
+  "nombre": "UNIDAD DE MANTENIMIENTO DE INFRAESTRUCTURA ELECTRICA Y SEMAFORIZACION",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786b2"
+  },
+  "nombre": "UNIDAD DE TRANSPORTES Y MAQUINARIA",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786b3"
+  },
+  "nombre": "SECRETARIA MUNICIPAL DE LA MADRE TIERRA Y DESARROLLO PRODUCTIVO",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786b4"
+  },
+  "nombre": "DIRECCION DE MEDIO AMBIENTE Y MADRE TIERRA",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786b5"
+  },
+  "nombre": "UNIDAD DE GESTION DE RIESGOS",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786b6"
+  },
+  "nombre": "UNIDAD DE AREAS VERDES, PARQUES Y JARDINES",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786b7"
+  },
+  "nombre": "DIRECCION DE DESARROLLO PRODUCTIVO Y ECONOMIA PLURAL",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786b8"
+  },
+  "nombre": "UNIDAD DE MATADERO MUNICIPAL",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786b9"
+  },
+  "nombre": "UNIDAD DE TURISMO",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786ba"
+  },
+  "nombre": "UNIDAD DE FORTALECIMIENTO Y DESARROLLO PRODUCTIVO",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786bb"
+  },
+  "nombre": "UNIDAD AGROFORESTAL",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786bc"
+  },
+  "nombre": "SECRETARIA MUNICIPAL DE DESARROLLO HUMANO INTEGRAL",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786bd"
+  },
+  "nombre": "DIRECCION DE DESARROLLO HUMANO",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786be"
+  },
+  "nombre": "UNIDAD DE GENERO GENERACIONAL Y FAMILIA",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786bf"
+  },
+  "nombre": "UNIDAD DE CULTURA",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786c0"
+  },
+  "nombre": "UNIDAD DE EDUCACION",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786c1"
+  },
+  "nombre": "UNIDAD DE DEPORTES Y PROMOCION",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786c2"
+  },
+  "nombre": "UNIDAD DE SEGURIDAD CIUDADANA Y MOVILIDAD MUNICIPAL",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786c3"
+  },
+  "nombre": "UNIDAD DE INTENDENCIA MUNICIPAL",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786c4"
+  },
+  "nombre": "SECRETARIA MUNICIPAL DE SALUD",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786c5"
+  },
+  "nombre": "DIRECCION DE ADMINISTRACION DE SALUD",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786c6"
+  },
+  "nombre": "UNIDAD DE CONTROL SANITARIO Y ZOONOSIS",
+  "clasificacion": "SUSTANTIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786c7"
+  },
+  "nombre": "UNIDAD ADMINISTRATIVO HOSPITAL MEXICO",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786c8"
+  },
+  "nombre": "UNIDAD ADMINISTRATIVO HOSPITAL SOLOMON KLEIN",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786c9"
+  },
+  "nombre": "UNIDAD ADMINISTRATIVO DE PROGRAMAS Y ESTABLECIMIENTOS DE SALUD DE 1º NIVEL",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786ca"
+  },
+  "nombre": "UNIDAD DE ADMINISTRACION FINANCIERA DE SALUD",
+  "clasificacion": "ADMINISTRATIVO"
+},{
+  "_id": {
+    "$oid": "664d01ef9e00135632d786cb"
+  },
+  "nombre": "UNIDAD DE CONTRATACIONES DE SALUD",
+  "clasificacion": "ADMINISTRATIVO"
+}]

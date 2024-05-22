@@ -1,0 +1,552 @@
+[{
+  "_id": {
+    "$oid": "659c6348c4d0bf8886f9324d"
+  },
+  "nombre": "DIRECCION DE DESARROLLO PRODUCTIVO Y ECONOMIA PLURAL",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 1000008,
+  "fuente": 41,
+  "organismo": 113,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c63d0c4d0bf8886f93251"
+  },
+  "nombre": "DIRECCION DE MEDIO AMBIENTE Y MADRE TIERRA",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 1300010,
+  "fuente": 20,
+  "organismo": 210,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c6426c4d0bf8886f93256"
+  },
+  "nombre": "UNIDAD DE PARQUES, JARDINES",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 1310016,
+  "fuente": 20,
+  "organismo": 210,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c6541c4d0bf8886f9325b"
+  },
+  "nombre": "MANTENIMIENTO Y MEJORAMIENTO DE PARAQUES Y JARDINES DISTRITO 2",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 1310018,
+  "fuente": 41,
+  "organismo": 113,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c656fc4d0bf8886f9325d"
+  },
+  "nombre": "UNIDAD VIVERO AGROFORESTAL",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 1320021,
+  "fuente": 41,
+  "organismo": 113,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c65afc4d0bf8886f9325f"
+  },
+  "nombre": "UNIDAD DE SERVICIOS ELECTRICOS Y SEMAFORIZACION",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 1600024,
+  "fuente": 20,
+  "organismo": 210,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c65eec4d0bf8886f93261"
+  },
+  "nombre": "UNIDAD DE PLANTA DE ASFALTO Y SEÑALIZACION VIAL",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 1800010,
+  "fuente": 41,
+  "organismo": 113,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c6676c4d0bf8886f93264"
+  },
+  "nombre": "DIRECCION DE  GESTION URBANA Y TERRITORIAL",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 1900005,
+  "fuente": 20,
+  "organismo": 210,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c671bc4d0bf8886f9326a"
+  },
+  "nombre": "DIRECCION DE GESTION URBANA Y TERRITORIAL(SANEAMIENTO TECNICO URBANO)",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 1900005,
+  "fuente": 41,
+  "organismo": 113,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c6737c4d0bf8886f9326c"
+  },
+  "nombre": "ADMINISTRACION DE SALUD MUNICIPAL",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 2000057,
+  "fuente": 20,
+  "organismo": 210,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c69f7c4d0bf8886f9328e"
+  },
+  "nombre": "SERVICIOS Y EQUIPAMIENTO UNIDAD DE CONTROL DE ZOONOSIS",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 2000010,
+  "fuente": 20,
+  "organismo": 210,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c6a1ac4d0bf8886f9329b"
+  },
+  "nombre": "UNIDAD DE EDUCACION MUNICIPAL",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 2100028,
+  "fuente": 20,
+  "organismo": 210,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c6a3ec4d0bf8886f9329d"
+  },
+  "nombre": "PROYECTOS UAIN@ (EXPAN)",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 2120005,
+  "fuente": 20,
+  "organismo": 210,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c6a71c4d0bf8886f9329f"
+  },
+  "nombre": "UNIDAD DE DEPORTES Y PROMOCION",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 2200009,
+  "fuente": 41,
+  "organismo": 113,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c6a9dc4d0bf8886f932a7"
+  },
+  "nombre": "UNIDAD DE CULTURA Y EVENTOS",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 2300007,
+  "fuente": 41,
+  "organismo": 113,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c6abdc4d0bf8886f932ad"
+  },
+  "nombre": "UNIDAD DE TURISMO",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 2400004,
+  "fuente": 20,
+  "organismo": 210,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c6afdc4d0bf8886f932b2"
+  },
+  "nombre": "SERVICIOS Y EQUIPAMIENTO DE PROTECCION AL ADULTO MAYOR",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 2530005,
+  "fuente": 20,
+  "organismo": 210,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c6b26c4d0bf8886f932b4"
+  },
+  "nombre": "SERVICIOS Y EQUIPAMIENTO UNIDAD DE ATENCION A PERSONAS CON DISCAPACIDAD - UMADIS",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 2540006,
+  "fuente": 41,
+  "organismo": 113,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c6b61c4d0bf8886f932b6"
+  },
+  "nombre": "UNIDAD DE DEFENSA Y PROTECCION DE LA NIÑEZ Y ADOLESCENCIA",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 2600003,
+  "fuente": 41,
+  "organismo": 113,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c6b95c4d0bf8886f932bf"
+  },
+  "nombre": "OTRAS ACTIVIDADES CONTRA LA VIOLENCIA HACIA LA MUJER",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 2500060,
+  "fuente": 20,
+  "organismo": 210,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c6bb5c4d0bf8886f932c1"
+  },
+  "nombre": "UNIDAD DE TRASPORTES Y MAQUINARIA",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 2700004,
+  "fuente": 20,
+  "organismo": 210,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c6be8c4d0bf8886f932c3"
+  },
+  "nombre": "SERVICIOS Y EQUIPAMIENTO DE TRAFICO Y VIALIDAD",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 2710008,
+  "fuente": 41,
+  "organismo": 113,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c6c05c4d0bf8886f932cb"
+  },
+  "nombre": "UNIDAD DE INTENDENCIA MUNICIPAL",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 2800004,
+  "fuente": 20,
+  "organismo": 210,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c6c2bc4d0bf8886f932cd"
+  },
+  "nombre": "UNIDAD MATADERO MUNICIPAL",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 2900004,
+  "fuente": 41,
+  "organismo": 113,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c6c75c4d0bf8886f932cf"
+  },
+  "nombre": "UNIDAD CEMENTERIO MUNICIPAL",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 3000003,
+  "fuente": 41,
+  "organismo": 113,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c6c96c4d0bf8886f932d1"
+  },
+  "nombre": "UNIDAD DE GESTION DE RIESGOS",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 3100012,
+  "fuente": 41,
+  "organismo": 113,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c6caec4d0bf8886f932d3"
+  },
+  "nombre": "UNIDAD DE SEGURIDAD CIUDADANA",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 3310015,
+  "fuente": 41,
+  "organismo": 113,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c6d22c4d0bf8886f932d5"
+  },
+  "nombre": "FORTALECIMIENTO MUNICIPAL - ADMINISTRACION CENTRAL",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 3410001,
+  "fuente": 20,
+  "organismo": 210,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+},{
+  "_id": {
+    "$oid": "659c6edec4d0bf8886f93316"
+  },
+  "nombre": "UNIDAD TERMINAL DE BUSES",
+  "gestion": {
+    "$date": "2024-01-01T00:00:00Z"
+  },
+  "codigo": 3500003,
+  "fuente": 20,
+  "organismo": 210,
+  "tipo": "SERVICIOS PERSONALES",
+  "estado": true,
+  "createdAt": {
+    "$date": "1970-01-01T00:00:00Z"
+  },
+  "id_usuario": {
+    "$oid": "66017f5358f585a2252fdc2f"
+  }
+}]
