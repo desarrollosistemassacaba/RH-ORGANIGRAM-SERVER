@@ -1,0 +1,119 @@
+// dependencias: 65fc5ac5dbf74177561ed056
+{
+  "nombre": "Departamento de Recursos Humanos ",
+  "sigla": "RHS",
+  "tipo": "SECRETARIA",
+  "estado": true,
+  "id_usuario": "609b0f2f2d19c820c4cf81c5"
+}
+
+{
+    "nombre": "DASDF", 
+    "sigla": "ASDF", 
+    "tipo": "JEFATURA", 
+    "estado": false
+}
+
+
+//descuento: 6617edee93a47d59b6e57dbf
+
+{
+  "nombre": "Descuento G",
+  "gestion": "2024-04-14",
+  "riesgo_comun": 5,
+  "afp": 10,
+  "riesgo_profesional": 15,
+  "aporte_solidario": 20,
+  "fonvi": 25,
+  "cns": 30,
+  "estado": false,
+  "descripcion": "Descuento por riesgo común secretariados",
+  "id_usuario": "605eaa7f3c88a25a2488b7c2"
+}
+
+
+//funcionario
+
+{
+  "nombre": "Pedro",
+  "apellido_pa": "Lopez",
+  "ci": 5555555555,
+  "ext": "AB",
+  "expedido": "CB",
+  "genero": "M",
+  "correo": "pedro@example.com",
+  "domicilio": {
+    "distrito": "613ed3e6beed350015f2c731",
+    "zona": "Centro",
+    "calle": "Av. 6 de Agosto",
+    "numero_casa": 123,
+    "telefono_casa": 1234567890
+  },
+  "id_representante":[""]
+  "id_usuario": "613ed3e6beed350015f2c730"
+}
+
+
+//partida
+{
+  "id_partida": "6626de3f849577cfc69af05d"
+}
+
+//distrito
+
+{
+  "codigo": 19112,
+  "distrito": "San jacintoss",
+  "provincia": "cochas",
+  "departamento": "cochas",
+  "estado": false,
+  "id_usuario": "609b0f2f2d19c820c4cf81b5"
+}
+
+//nivel
+{
+    "nombre": null,
+  "gestion": "2024-03-202",
+  "haber_basico": 2450,
+  "id_usuario": "609b0f2f2d19c820c4cf81b5"
+}
+
+//registro
+{
+  "numero_contrato": "ABC1234567",
+  "tipo": "ALTA",
+  "id_funcionario": "60e6e31a5a1908144ca5c3e7", 
+  "id_cargo": "66219b6c79059bddf83333b2", 
+  "id_usuario": "60e6e31a5a1908144ca5c3e9", 
+  "historico": [
+    {
+      "id_cargo": "66219b6c79059bddf83333b2", 
+      "tipo": "ALTA",
+      "fecha_inicio": "2024-04-19T12:00:00Z",
+      "fecha_final": "2024-04-30T12:00:00Z"
+    },
+    {
+      "id_cargo": "66219b6c79059bddf83333b2", 
+      "tipo": "BAJA",
+      "fecha_inicio": "2024-05-01T12:00:00Z",
+      "fecha_final": "2024-05-10T12:00:00Z"
+    }
+  ]
+}
+//probando el campo historico
+{
+      "historico": [
+    {
+      "id_cargo": "60e6e31a5a1908144ca5c3e8", 
+      "tipo": "ALTA",
+      "fecha_inicio": "2024-04-19T12:00:00Z",
+      "fecha_final": "2024-04-30T12:00:00Z"
+    },
+    {
+      "id_cargo": "60e6e31a5a1908144ca5c3e8", 
+      "tipo": "s",
+      "fecha_inicio": "2024-05-01T12:00:00Z",
+      "fecha_final": "2024-05-10T12:00:00Z"
+    }
+  ]
+}
