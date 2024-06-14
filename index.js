@@ -16,9 +16,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(session({ secret: "secret", resave: true, saveUninitialized: true }));
+dbConnection();
 
-database.conexion();
+//database.conexion();
+app.use(express.static(path.join(__dirname, "../client")));
 app.use(routes);
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname + "index.html"));
+});
 
 server.listen(process.env.PORT, () => {
   console.log("Servidor activo en puerto ", process.env.PORT);
