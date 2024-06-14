@@ -1,4 +1,5 @@
 const { validarCampo } = require("./validacion");
+const Cargo = require("../models/cargos.model");
 const Partida = require("../models/partidas.model");
 const Nivel = require("../models/niveles.model");
 const Departamento = require("../models/departamentos.model");
@@ -42,7 +43,7 @@ function validarUnidad(requerido = true, actualizar = false) {
       requerido,
       lista: ["SUSTANTIVO", "ADMINISTRATIVO"],
     }),
-    validarCampo("id_usuario", { requerido, tipoMongoId: true }),
+    validarCampo("id_usuario", { requerido: false, tipoMongoId: true }),
   ];
 }
 
@@ -199,53 +200,57 @@ function validarDepartamento(requerido = true, actualizar = false) {
 function validarFuncionario(requerido = true, actualizar = false) {
   return [
     validarCampo("nombre", { requerido, longitudMaxima: 20 }),
-    validarCampo("apellido_pa", { requerido, longitudMaxima: 20 }),
-    validarCampo("apellido_ma", { requerido: false, longitudMaxima: 20 }),
+    validarCampo("paterno", { requerido, longitudMaxima: 20 }),
+    validarCampo("materno", { requerido: false, longitudMaxima: 20 }),
     validarCampo("ci", {
       requerido,
       tipoEntero: true,
-      minNumero: 1000000,
+      minNumero: 1000,
       longitudMaxima: 10,
       existeCI: Funcionario,
       actualizar,
     }),
     validarCampo("ext", {
       requerido: false,
-      longitudMinima: 2,
+      longitudMinima: 1,
       longitudMaxima: 2,
     }),
     validarCampo("expedido", {
-      requerido: false,
-      lista: ["LP", "SC", "CB", "PT", "OR", "TJ", "CH", "BE", "PD"],
+      requerido,
+      lista: ["LP", "SC", "CB", "PT", "OR", "TJ", "CH", "BN", "PA"],
     }),
-    validarCampo("genero", { requerido: false, lista: ["M", "F"] }),
-    validarCampo("correo", {
-      requerido: false,
-      tipoEmail: true,
-      longitudMaxima: 35,
-    }),
+    validarCampo("genero", { requerido, lista: ["M", "F"] }),
+    validarCampo("fecha_nacimiento", { requerido, formatoFecha: true }),
     validarCampo("telefono", {
       requerido: false,
       tipoEntero: true,
       minNumero: 1000000,
       longitudMaxima: 10,
     }),
-    validarCampo("domicilio.distrito", { requerido: false, tipoMongoId: true }),
+    validarCampo("correo", {
+      requerido: false,
+      tipoEmail: true,
+      longitudMaxima: 35,
+    }),
+    validarCampo("domicilio.distrito", {
+      requerido: false,
+      longitudMaxima: 50,
+    }),
     validarCampo("domicilio.zona", { requerido: false, longitudMaxima: 50 }),
-    validarCampo("domicilio.calle", { requerido: false, longitudMaxima: 50 }),
     validarCampo("domicilio.pasaje", { requerido: false, longitudMaxima: 50 }),
+    validarCampo("domicilio.calle", { requerido: false, longitudMaxima: 50 }),
     validarCampo("domicilio.numero_casa", {
       requerido: false,
       tipoEntero: true,
       minNumero: 1,
       longitudMaxima: 5,
     }),
-    validarCampo("domicilio.telefono_casa", {
-      requerido: false,
-      tipoEntero: true,
-      minNumero: 1111111,
-      longitudMaxima: 10,
-    }),
+    // validarCampo("domicilio.telefono_casa", {
+    //   requerido: false,
+    //   tipoEntero: true,
+    //   minNumero: 1111111,
+    //   longitudMaxima: 10,
+    // }),
     validarCampo("estado", { requerido: false, tipoBooleano: true }),
     validarCampo("id_usuario", { requerido: false, tipoMongoId: true }),
   ];
@@ -275,13 +280,13 @@ function validarUsuario(requerido = true, actualizar = false) {
   ];
 }
 
-function validarCargo(requerido = true) {
+function validarCargo(requerido = true /*, actualizar = false*/) {
   return [
     validarCampo("nombre", {
       requerido,
       longitudMaxima: 100,
     }),
-    validarCampo("denominacion", { requerido, longitudMaxima: 50 }),
+    validarCampo("denominacion", { requerido: false, longitudMaxima: 50 }),
     validarCampo("contrato", {
       requerido,
       lista: ["ITEM", "EVENTUAL", "REMANENTE"],
@@ -292,10 +297,12 @@ function validarCargo(requerido = true) {
     }),
     validarCampo("rotacion", { requerido: false, tipoBooleano: true }),
     validarCampo("registro", {
-      requerido: false,
+      requerido,
       tipoEntero: true,
       minNumero: 1,
       longitudMaxima: 5,
+      //   existeValues: Cargo,
+      //   actualizar,
     }),
     validarCampo("duracion_contrato", {
       requerido: false,
@@ -304,7 +311,7 @@ function validarCargo(requerido = true) {
       longitudMaxima: 3,
     }),
     validarCampo("objetivo", {
-      requerido,
+      requerido: false,
       longitudMaxima: 300,
     }),
     validarCampo("estado", { requerido: false, tipoBooleano: true }),
@@ -344,14 +351,39 @@ function validarRegistro(requerido = true, actualizar = false) {
   return [
     validarCampo("tipo", {
       requerido: false,
-      lista: ["RENUNCIA", "RESOLUCION", "ROTACION", "REASIGNACION", "ASCENSO"],
+      lista: [
+        "RENUNCIA",
+        "RESOLUCION",
+        "ROTACION",
+        "REASIGNACION",
+        "ASCENSO",
+        "AGRADECIMIENTO",
+      ],
     }),
+    validarCampo("fecha_baja", { requerido: false }),
     validarCampo("fecha_ingreso", { requerido, formatoFecha: true }),
     validarCampo("fecha_conclusion", { requerido, formatoFecha: true }),
+    validarCampo("abreviatura", { requerido: false }),
+    validarCampo("contratante", { requerido: false, longitudMaxima: 100 }),
+    validarCampo("cargo_contratante", {
+      requerido: false,
+      longitudMaxima: 100,
+    }),
+    validarCampo("fecha_contrato", { requerido, formatoFecha: true }),
+    validarCampo("tipo_contrato", {
+      requerido: false,
+      lista: ["MD", "MR", "MA", "CO"],
+    }),
+    validarCampo("numero_contrato", { requerido: false, longitudMaxima: 10 }),
+    validarCampo("detalle_contrato", { requerido: false }),
     validarCampo("historico", {
       requerido: false,
       tipoArray: true,
       actualizar,
+    }),
+    validarCampo("descripcion", {
+      requerido: false,
+      longitudMaxima: 100,
     }),
     validarCampo("estado", { requerido: false, tipoBooleano: true }),
     validarCampo("id_funcionario", {

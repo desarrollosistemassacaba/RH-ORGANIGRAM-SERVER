@@ -5,7 +5,17 @@ const registroSchema = new mongoose.Schema({
     type: String,
     //required: [true, "El tipo de registro es requerido."],
     uppercase: true,
-    enum: ["RENUNCIA", "RESOLUCION", "ROTACION", "REASIGNACION", "ASCENSO"],
+    enum: [
+      "RENUNCIA",
+      "RESOLUCION",
+      "ROTACION",
+      "REASIGNACION",
+      "ASCENSO",
+      "AGRADECIMIENTO",
+    ],
+  },
+  fecha_baja: {
+    type: Date,
   },
   fecha_ingreso: {
     type: Date,
@@ -30,6 +40,42 @@ const registroSchema = new mongoose.Schema({
       },
     },
   ],
+  abreviatura: {
+    type: String,
+    uppercase: true,
+    maxlength: [10, "No debe exceder los 10 caracteres."],
+  },
+  contratante: {
+    type: String,
+    uppercase: true,
+    maxlength: [100, "No debe exceder los 100 caracteres."],
+  },
+  cargo_contratante: {
+    type: String,
+    uppercase: true,
+    maxlength: [100, "No debe exceder los 100 caracteres."],
+  },
+  tipo_contrato: {
+    type: String,
+    uppercase: true,
+    enum: ["MD", "MR", "MA", "CO"],
+  },
+  numero_contrato: {
+    type: String,
+    uppercase: true,
+    maxlength: [10, "No debe exceder los 10 caracteres."],
+  },
+  detalle_contrato: {
+    type: String,
+  },
+  fecha_contrato: {
+    type: Date,
+  },
+  descripcion: {
+    type: String,
+    uppercase: true,
+    maxlength: [100, "No debe exceder los 100 caracteres."],
+  },
   estado: {
     type: Boolean,
     default: true,

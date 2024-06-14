@@ -25,7 +25,8 @@ async function createElemento(req, res) {
 }
 
 async function updateElemento(req, res) {
-  await controller.update(Registro, req, res, "Registro");
+  const evaluarCampos = ["cargo", "abreviatura"];
+  await controller.update(Registro, req, res, "Registro", evaluarCampos);
 }
 
 async function deleteElemento(req, res) {

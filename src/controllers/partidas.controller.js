@@ -18,7 +18,6 @@ async function getElementoFiltrado(req, res) {
 }
 
 async function createElemento(req, res) {
-  console.log(req.params.value);
   await controller.create(Partida, req, res, "Partida");
 }
 
