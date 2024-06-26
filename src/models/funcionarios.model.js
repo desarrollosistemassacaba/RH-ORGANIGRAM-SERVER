@@ -7,13 +7,13 @@ const funcionarioSchema = new mongoose.Schema({
     uppercase: true,
     maxlength: [20, "En nombre no puede exceder los 20 caracteres."],
   },
-  apellido_pa: {
+  paterno: {
     type: String,
     required: [true, "El apellido paterno es requerido."],
     uppercase: true,
     maxlength: [20, "El apellido paterno no puede exceder los 20 caracteres."],
   },
-  apellido_ma: {
+  materno: {
     type: String,
     uppercase: true,
     maxlength: [20, "El apellido materno no puede exceder los 20 caracteres."],
@@ -36,7 +36,7 @@ const funcionarioSchema = new mongoose.Schema({
     require: [true, "El campo expedido es requerido"],
     uppercase: true,
     maxlength: [2, "El campo expedido no debe exceder los 3 caracteres"],
-    enum: ["LP", "SC", "CB", "PT", "OR", "TJ", "CH", "BE", "PD"],
+    enum: ["LP", "SC", "CB", "PT", "OR", "TJ", "CH", "BN", "PA"],
   },
   genero: {
     type: String,
@@ -44,43 +44,47 @@ const funcionarioSchema = new mongoose.Schema({
     uppercase: true,
     enum: ["M", "F"],
   },
-  correo: {
-    type: String,
-    lowercase: true,
-    match: [/\S+@\S+\.\S+/, "El correo electrónico no es válido."],
-    maxlength: [35, "El correo no debe exceder los 35 caracteres"],
+  fecha_nacimiento: {
+    type: Date,
+    required: [true, "Fecha de nacimiento es requerido."],
   },
   telefono: {
     type: Number,
     maxlength: [10, "El número de teléfono no debe exceder las 10 cifras."],
   },
+  correo: {
+    type: String,
+    uppercase: true,
+    match: [
+      /^[\w.-]+@[a-zA-Z\d.-]+\.[a-zA-Z]{2,}$/,
+      "El correo electrónico no es válido.",
+    ],
+    maxlength: [35, "El correo no debe exceder los 35 caracteres"],
+  },
   domicilio: {
     distrito: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Distritos",
+      type: String,
+      uppercase: true,
+      maxlength: [50, "El distrito no puede exceder los 50 caracteres."],
     },
     zona: {
       type: String,
       uppercase: true,
       maxlength: [50, "La zona no puede exceder los 50 caracteres."],
     },
-    calle: {
-      type: String,
-      uppercase: true,
-      maxlength: [50, "La calle no puede exceder los 50 caracteres."],
-    },
     pasaje: {
       type: String,
       uppercase: true,
       maxlength: [50, "El pasaje no puede exceder los 50 caracteres."],
     },
+    calle: {
+      type: String,
+      uppercase: true,
+      maxlength: [50, "La calle no puede exceder los 50 caracteres."],
+    },
     numero_casa: {
       type: Number,
       maxlength: [5, "El numero de casa no puede exceder los 5 dígitos."],
-    },
-    telefono_casa: {
-      type: Number,
-      maxlength: [10, "El numero de casa no puede exceder los 10 dígitos."],
     },
   },
   estado: {

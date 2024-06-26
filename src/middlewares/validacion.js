@@ -173,8 +173,6 @@ function validarCampo(nombreCampo, opciones) {
             };
       }
 
-      console.log(parameter);
-
       const registroExistente = await opciones.existeCI.findOne(parameter);
       if (registroExistente) {
         throw new Error("Ya existe un registro con el mismo CI y EXT.");

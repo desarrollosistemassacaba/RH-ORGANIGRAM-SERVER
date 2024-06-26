@@ -5,7 +5,17 @@ const registroSchema = new mongoose.Schema({
     type: String,
     //required: [true, "El tipo de registro es requerido."],
     uppercase: true,
-    enum: ["RENUNCIA", "RESOLUCION", "ROTACION", "REASIGNACION", "ASCENSO"],
+    enum: [
+      "RENUNCIA",
+      "RESOLUCION",
+      "ROTACION",
+      "REASIGNACION",
+      "ASCENSO",
+      "AGRADECIMIENTO",
+    ],
+  },
+  fecha_baja: {
+    type: Date,
   },
   fecha_ingreso: {
     type: Date,
@@ -30,6 +40,21 @@ const registroSchema = new mongoose.Schema({
       },
     },
   ],
+  tipo_contrato: {
+    type: String,
+    uppercase: true,
+    enum: ["MD", "MR", "MA", "CO"],
+  },
+  numero_contrato: {
+    type: String,
+    uppercase: true,
+    maxlength: [50, "No debe exceder los 10 caracteres."],
+  },
+  descripcion: {
+    type: String,
+    uppercase: true,
+    maxlength: [100, "No debe exceder los 100 caracteres."],
+  },
   estado: {
     type: Boolean,
     default: true,
@@ -37,6 +62,10 @@ const registroSchema = new mongoose.Schema({
   createdAt: {
     type: Date,
     default: Date.now,
+  },
+  id_secretaria_contratante: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Registros",
   },
   id_funcionario: {
     type: mongoose.Schema.Types.ObjectId,

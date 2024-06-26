@@ -21,10 +21,13 @@ const unidadSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
+  id_dependencia: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Dependencias",
+  },
   id_usuario: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Usuarios",
-    required: true,
   },
 });
 

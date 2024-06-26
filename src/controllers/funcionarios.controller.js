@@ -28,7 +28,17 @@ async function createElemento(req, res) {
 }
 
 async function updateElemento(req, res) {
-  await controller.update(Funcionario, req, res, "Funcionario");
+  const evaluarCampos = [
+    "materno",
+    "ext",
+    "telefono",
+    "correo",
+    "domicilio.zona",
+    "domicilio.pasaje",
+    "domicilio.calle",
+    "domicilio.numero_casa",
+  ];
+  await controller.update(Funcionario, req, res, "Funcionario", evaluarCampos);
 }
 
 async function deleteElemento(req, res) {

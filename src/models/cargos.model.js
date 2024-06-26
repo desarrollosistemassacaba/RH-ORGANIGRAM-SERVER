@@ -9,7 +9,6 @@ const cargoSchema = new mongoose.Schema({
   },
   denominacion: {
     type: String,
-    required: [true, "La denominacion del cargo es requerido."],
     maxlength: [
       50,
       "La denominacion de cargo no debe exceder los 50 caracteres.",
@@ -33,6 +32,7 @@ const cargoSchema = new mongoose.Schema({
   },
   registro: {
     type: Number,
+    required: [true, "El reqistro es requerido."],
     maxlength: [5, "El registro no debe exceder los 5 dígitos"],
   },
   duracion_contrato: {
@@ -41,7 +41,6 @@ const cargoSchema = new mongoose.Schema({
   },
   objetivo: {
     type: String,
-    required: [true, "El objetivo es requerido."],
     maxlength: [300, "El objetivo no debe exceder los 300 caracteres."],
     uppercase: true,
   },

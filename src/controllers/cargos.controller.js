@@ -33,6 +33,7 @@ async function getElementos(req, res) {
 
 async function getElemento(req, res) {
   const referencia = [
+    "registro",
     "id_partida",
     "id_nivel_salarial",
     "id_dependencia",
