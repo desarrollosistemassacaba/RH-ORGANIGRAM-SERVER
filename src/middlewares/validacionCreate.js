@@ -43,6 +43,7 @@ function validarUnidad(requerido = true, actualizar = false) {
       requerido,
       lista: ["SUSTANTIVO", "ADMINISTRATIVO"],
     }),
+    validarCampo("id_dependencia", { requerido: false, tipoMongoId: true }),
     validarCampo("id_usuario", { requerido: false, tipoMongoId: true }),
   ];
 }
@@ -363,19 +364,11 @@ function validarRegistro(requerido = true, actualizar = false) {
     validarCampo("fecha_baja", { requerido: false }),
     validarCampo("fecha_ingreso", { requerido, formatoFecha: true }),
     validarCampo("fecha_conclusion", { requerido, formatoFecha: true }),
-    validarCampo("abreviatura", { requerido: false }),
-    validarCampo("contratante", { requerido: false, longitudMaxima: 100 }),
-    validarCampo("cargo_contratante", {
-      requerido: false,
-      longitudMaxima: 100,
-    }),
-    validarCampo("fecha_contrato", { requerido, formatoFecha: true }),
     validarCampo("tipo_contrato", {
       requerido: false,
       lista: ["MD", "MR", "MA", "CO"],
     }),
-    validarCampo("numero_contrato", { requerido: false, longitudMaxima: 10 }),
-    validarCampo("detalle_contrato", { requerido: false }),
+    validarCampo("numero_contrato", { requerido: false, longitudMaxima: 50 }),
     validarCampo("historico", {
       requerido: false,
       tipoArray: true,
@@ -386,6 +379,10 @@ function validarRegistro(requerido = true, actualizar = false) {
       longitudMaxima: 100,
     }),
     validarCampo("estado", { requerido: false, tipoBooleano: true }),
+    validarCampo("id_secretaria_contratante", {
+      requerido: false,
+      tipoMongoId: true,
+    }),
     validarCampo("id_funcionario", {
       requerido,
       tipoMongoId: true,

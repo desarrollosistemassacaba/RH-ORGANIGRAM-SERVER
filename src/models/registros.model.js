@@ -40,21 +40,6 @@ const registroSchema = new mongoose.Schema({
       },
     },
   ],
-  abreviatura: {
-    type: String,
-    uppercase: true,
-    maxlength: [10, "No debe exceder los 10 caracteres."],
-  },
-  contratante: {
-    type: String,
-    uppercase: true,
-    maxlength: [100, "No debe exceder los 100 caracteres."],
-  },
-  cargo_contratante: {
-    type: String,
-    uppercase: true,
-    maxlength: [100, "No debe exceder los 100 caracteres."],
-  },
   tipo_contrato: {
     type: String,
     uppercase: true,
@@ -63,13 +48,7 @@ const registroSchema = new mongoose.Schema({
   numero_contrato: {
     type: String,
     uppercase: true,
-    maxlength: [10, "No debe exceder los 10 caracteres."],
-  },
-  detalle_contrato: {
-    type: String,
-  },
-  fecha_contrato: {
-    type: Date,
+    maxlength: [50, "No debe exceder los 10 caracteres."],
   },
   descripcion: {
     type: String,
@@ -83,6 +62,10 @@ const registroSchema = new mongoose.Schema({
   createdAt: {
     type: Date,
     default: Date.now,
+  },
+  id_secretaria_contratante: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Registros",
   },
   id_funcionario: {
     type: mongoose.Schema.Types.ObjectId,
