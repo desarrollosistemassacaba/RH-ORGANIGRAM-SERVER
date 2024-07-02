@@ -9,6 +9,8 @@ const valores = {
   registro: 1,
   estado: 1,
   id_nivel_salarial: 1,
+  id_partida: 1,
+  id_unidad: 1,
   id_dependencia: 1,
   cargo_principal: 1,
   id_cargo_superior: 1,
