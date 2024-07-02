@@ -50,7 +50,7 @@ database.conexion();
 app.use(express.static(path.join(__dirname, "../client")));
 app.use(routes);
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname + "/index.html"));
+  res.sendFile(path.join(__dirname, "../client", "index.html"));
 });
 
 server.listen(process.env.PORT, () => {
