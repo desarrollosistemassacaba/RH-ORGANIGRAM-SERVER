@@ -201,8 +201,9 @@ function validarDepartamento(requerido = true, actualizar = false) {
 function validarFuncionario(requerido = true, actualizar = false) {
   return [
     validarCampo("nombre", { requerido, longitudMaxima: 20 }),
-    validarCampo("paterno", { requerido, longitudMaxima: 20 }),
+    validarCampo("paterno", { requerido: false, longitudMaxima: 20 }),
     validarCampo("materno", { requerido: false, longitudMaxima: 20 }),
+    validarCampo("casada", { requerido: false, longitudMaxima: 50 }),
     validarCampo("ci", {
       requerido,
       tipoEntero: true,
@@ -217,7 +218,7 @@ function validarFuncionario(requerido = true, actualizar = false) {
       longitudMaxima: 2,
     }),
     validarCampo("expedido", {
-      requerido,
+      requerido: false,
       lista: ["LP", "SC", "CB", "PT", "OR", "TJ", "CH", "BN", "PA"],
     }),
     validarCampo("genero", { requerido, lista: ["M", "F"] }),
