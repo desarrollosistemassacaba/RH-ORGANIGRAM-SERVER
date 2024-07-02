@@ -5,11 +5,11 @@ const funcionarioSchema = new mongoose.Schema({
     type: String,
     required: [true, "El nombre es requerido."],
     uppercase: true,
-    maxlength: [20, "En nombre no puede exceder los 20 caracteres."],
+    maxlength: [20, "El nombre no puede exceder los 20 caracteres."],
   },
   paterno: {
     type: String,
-    required: [true, "El apellido paterno es requerido."],
+    //required: [true, "El apellido paterno es requerido."],
     uppercase: true,
     maxlength: [20, "El apellido paterno no puede exceder los 20 caracteres."],
   },
@@ -17,6 +17,14 @@ const funcionarioSchema = new mongoose.Schema({
     type: String,
     uppercase: true,
     maxlength: [20, "El apellido materno no puede exceder los 20 caracteres."],
+  },
+  casada: {
+    type: String,
+    uppercase: true,
+    maxlength: [
+      50,
+      "El apellido de casada no puede exceder los 50 caracteres.",
+    ],
   },
   ci: {
     type: Number,
@@ -33,7 +41,7 @@ const funcionarioSchema = new mongoose.Schema({
   },
   expedido: {
     type: String,
-    require: [true, "El campo expedido es requerido"],
+    //require: [true, "El campo expedido es requerido"],
     uppercase: true,
     maxlength: [2, "El campo expedido no debe exceder los 3 caracteres"],
     enum: ["LP", "SC", "CB", "PT", "OR", "TJ", "CH", "BN", "PA"],
