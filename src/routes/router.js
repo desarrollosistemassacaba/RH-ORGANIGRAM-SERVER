@@ -75,7 +75,7 @@ rutas(router, "usuario", validarUsuario, validarActualizacionUsuario);
 rutas(router, "cargo", validarCargo, validarActualizacionCargo);
 
 // Rutas para organigrama
-rutas(router, "organigrama", validarCargo, validarActualizacionCargo);
+rutas(router, "organization", validarCargo, validarActualizacionCargo);
 
 // Rutas para Registros
 rutas(router, "registro", validarRegistro, validarActualizacionRegistro);
