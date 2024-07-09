@@ -44,7 +44,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(session({ secret: "secret", resave: true, saveUninitialized: true }));
-//dbConnection();
 
 database.conexion();
 app.use(express.static(path.join(__dirname, "../client")));

@@ -349,6 +349,14 @@ function validarCargo(requerido = true /*, actualizar = false*/) {
   ];
 }
 
+function validarDetalle(requerido = true, actualizar = false) {
+  return [
+    validarCampo("titulo", { requerido: false, longitudMaxima: 100 }),
+    validarCampo("documentos", { requerido: false }),
+    validarCampo("id_funcionario", { tipoMongoId: true }),
+  ];
+}
+
 function validarRegistro(requerido = true, actualizar = false) {
   return [
     validarCampo("tipo", {
@@ -406,4 +414,5 @@ module.exports = {
   validarUsuario,
   validarCargo,
   validarRegistro,
+  validarDetalle,
 };

@@ -1,32 +1,32 @@
-const Nivel = require("../models/niveles.model");
+const Detalle = require("../models/detalles.model");
 const controller = require("./controller");
 
 async function getElementos(req, res) {
-  await controller.getAll(Nivel, req, res, "niveles");
+  await controller.getAll(Detalle, req, res, "detalles");
 }
 
 async function getElemento(req, res) {
-  await controller.getById(Nivel, req, res, "Nivel");
+  await controller.getById(Detalle, req, res, "Detalle");
 }
 
 async function getCampoFiltrado(req, res) {
-  await controller.getByFilterCamp(Nivel, req, res, "niveles");
+  await controller.getByFilterCamp(Detalle, req, res, "detalles");
 }
 
 async function getElementoFiltrado(req, res) {
-  await controller.getByFilter(Nivel, req, res, "niveles");
+  await controller.getByFilter(Detalle, req, res, "detalles");
 }
 
 async function createElemento(req, res) {
-  await controller.create(Nivel, req, res, "Nivel");
+  await controller.create(Detalle, req, res, "Detalle");
 }
 
 async function updateElemento(req, res) {
-  await controller.update(Nivel, req, res, "Nivel");
+  await controller.update(Detalle, req, res, "Detalle");
 }
 
 async function deleteElemento(req, res) {
-  await controller.remove(Nivel, req, res, "Nivel");
+  await controller.remove(Detalle, req, res, "Detalle");
 }
 
 module.exports = {
