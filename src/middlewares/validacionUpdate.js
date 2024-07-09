@@ -10,6 +10,7 @@ const {
   validarUsuario,
   validarCargo,
   validarRegistro,
+  validarDetalle,
 } = require("./validacionCreate");
 
 //requerido envia el valor de false con el objetivo de que los campos pasen a un valor no required y sean opcional, pero que a su vez no permita introducir campos null.
@@ -62,6 +63,10 @@ function validarActualizacionRegistro() {
   return validarRegistro(requerido, actualizar);
 }
 
+function validarActualizacionDetalle() {
+  return validarDetalle(requerido, actualizar);
+}
+
 module.exports = {
   validarActualizacionDependencia,
   validarActualizacionUnidad,
@@ -74,4 +79,5 @@ module.exports = {
   validarActualizacionUsuario,
   validarActualizacionCargo,
   validarActualizacionRegistro,
+  validarActualizacionDetalle,
 };

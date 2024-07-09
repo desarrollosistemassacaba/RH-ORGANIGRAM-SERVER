@@ -13,6 +13,7 @@ const controladores = {
   cargo: require("../controllers/cargos.controller"),
   registro: require("../controllers/registros.controller"),
   organization: require("../controllers/organigrama.controller"),
+  detalle: require("../controllers/detalles.controller"),
 };
 
 function rutas(router, controlador, validadorCrear, validadorActualizar) {
