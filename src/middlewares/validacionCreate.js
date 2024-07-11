@@ -1,5 +1,4 @@
 const { validarCampo } = require("./validacion");
-const Cargo = require("../models/cargos.model");
 const Partida = require("../models/partidas.model");
 const Nivel = require("../models/niveles.model");
 const Departamento = require("../models/departamentos.model");
@@ -27,7 +26,6 @@ function validarDependencia(requerido = true, actualizar = false) {
     }),
     validarCampo("estado", { requerido: false, tipoBooleano: true }),
     validarCampo("id_dependencia", { requerido: false, tipoMongoId: true }),
-    validarCampo("id_usuario", { requerido: false, tipoMongoId: true }),
   ];
 }
 
@@ -44,7 +42,6 @@ function validarUnidad(requerido = true, actualizar = false) {
       lista: ["SUSTANTIVO", "ADMINISTRATIVO"],
     }),
     validarCampo("id_dependencia", { requerido: false, tipoMongoId: true }),
-    validarCampo("id_usuario", { requerido: false, tipoMongoId: true }),
   ];
 }
 
@@ -85,7 +82,6 @@ function validarPartida(requerido = true, actualizar = false) {
     validarCampo("tipo", { requerido: false, longitudMaxima: 50 }),
     validarCampo("estado", { requerido: false, tipoBooleano: true }),
     // validarCampo("id_gestion", { requerido: false, tipoMongoId: true }),
-    validarCampo("id_usuario", { requerido: false, tipoMongoId: true }),
   ];
 }
 
@@ -122,7 +118,6 @@ function validarDescuento(requerido = true, actualizar = false) {
     validarCampo("cns", { requerido: false, tipoNumero: true, minNumero: 0.1 }),
     validarCampo("descripcion", { requerido: false, longitudMaxima: 200 }),
     validarCampo("estado", { requerido: false, tipoBooleano: true }),
-    validarCampo("id_usuario", { requerido, tipoMongoId: true }),
   ];
 }
 
@@ -163,7 +158,6 @@ function validarNivel(requerido = true, actualizar = false) {
     }),
     validarCampo("estado", { requerido: false, tipoBooleano: true }),
     validarCampo("id_descuento", { requerido: false, tipoMongoId: true }),
-    validarCampo("id_usuario", { requerido: false, tipoMongoId: true }),
   ];
 }
 
@@ -180,7 +174,6 @@ function validarDistrito(requerido = true, actualizar = false) {
     validarCampo("distrito", { requerido, longitudMaxima: 50 }),
     validarCampo("estado", { requerido: false, tipoBooleano: true }),
     validarCampo("id_departamento", { requerido, tipoMongoId: true }),
-    validarCampo("id_usuario", { requerido, tipoMongoId: true }),
   ];
 }
 
@@ -194,7 +187,6 @@ function validarDepartamento(requerido = true, actualizar = false) {
     }),
     validarCampo("departamento", { requerido, longitudMaxima: 50 }),
     validarCampo("estado", { requerido: false, tipoBooleano: true }),
-    validarCampo("id_usuario", { requerido, tipoMongoId: true }),
   ];
 }
 
@@ -254,7 +246,6 @@ function validarFuncionario(requerido = true, actualizar = false) {
     //   longitudMaxima: 10,
     // }),
     validarCampo("estado", { requerido: false, tipoBooleano: true }),
-    validarCampo("id_usuario", { requerido: false, tipoMongoId: true }),
   ];
 }
 
@@ -398,7 +389,6 @@ function validarRegistro(requerido = true, actualizar = false) {
       existeValues: Registro,
     }),
     validarCampo("id_cargo", { requerido, tipoMongoId: true }),
-    validarCampo("id_usuario", { requerido: false, tipoMongoId: true }),
   ];
 }
 

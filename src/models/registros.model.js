@@ -77,11 +77,6 @@ const registroSchema = new mongoose.Schema({
     ref: "Cargos",
     required: [true, "El ID del cargo es requerido."],
   },
-  id_usuario: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Usuarios",
-    //required: [true, "El ID del usuario es requerido."],
-  },
 });
 
 module.exports = mongoose.model("Registros", registroSchema);

@@ -34,11 +34,6 @@ const nivelesSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
-  id_usuario: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Usuarios",
-    //required: [true, "Debe iniciar sesión"],
-  },
 });
 
 nivelesSchema.index({ nombre: 1, gestion: 1 });

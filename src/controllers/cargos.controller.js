@@ -41,7 +41,6 @@ async function getElemento(req, res) {
     "id_dependencia",
     "id_unidad",
     "id_cargo_superior",
-    "id_cargo_dependiente",
   ];
   await controller.getById(Cargo, req, res, "Cargo", referencia);
 }

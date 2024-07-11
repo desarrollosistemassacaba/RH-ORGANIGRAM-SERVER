@@ -77,14 +77,9 @@ const cargoSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "Cargos",
   },
-  id_cargo_dependiente: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Cargos",
-  },
-  //   id_usuario: {
+  //   id_cargo_dependiente: {
   //     type: mongoose.Schema.Types.ObjectId,
-  //     ref: "Usuarios",
-  //     required: [true, "Debe iniciar sesión"],
+  //     ref: "Cargos",
   //   },
 });
 

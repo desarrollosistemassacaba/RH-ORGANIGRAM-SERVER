@@ -24,11 +24,6 @@ const distritoSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "Departamentos",
   },
-  id_usuario: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Usuarios",
-    required: [true, "Debe iniciar sesión"],
-  },
 });
 
 distritoSchema.index({ codigo: 1, distrito: 1 });
