@@ -31,11 +31,6 @@ const dependenciaSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "Dependencias",
   },
-  id_usuario: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Usuarios",
-    // required: [true, "Debe iniciar sesión"],
-  },
 });
 
 dependenciaSchema.index({ nombre: 1, sigla: 1 });

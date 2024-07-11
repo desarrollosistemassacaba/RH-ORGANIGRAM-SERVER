@@ -103,11 +103,6 @@ const funcionarioSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
-  id_usuario: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Usuarios",
-    //required: [true, "Debe iniciar sesión"],
-  },
 });
 
 // Índices para mejorar la eficiencia de las consultas

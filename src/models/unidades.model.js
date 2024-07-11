@@ -25,10 +25,6 @@ const unidadSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "Dependencias",
   },
-  id_usuario: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Usuarios",
-  },
 });
 
 unidadSchema.index({ nombre: 1 });

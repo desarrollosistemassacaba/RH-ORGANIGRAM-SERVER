@@ -32,10 +32,6 @@ const usuarioSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "Funcionarios",
   },
-  id_usuario: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Usuarios",
-  },
 });
 
 module.exports = mongoose.model("Usuarios", usuarioSchema);

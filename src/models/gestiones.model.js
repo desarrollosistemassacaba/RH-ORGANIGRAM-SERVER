@@ -40,11 +40,6 @@ const gestionSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
-  id_usuario: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Usuarios",
-    required: [true, "Debe iniciar sesión"],
-  },
 });
 
 gestionSchema.index({ codigo: 1 });

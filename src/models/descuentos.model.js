@@ -42,11 +42,6 @@ const descuentoSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
-  id_usuario: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Usuarios",
-    required: [true, "Debe iniciar sesión"],
-  },
 });
 
 descuentoSchema.index({ gestion: 1 });
