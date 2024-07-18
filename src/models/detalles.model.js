@@ -17,4 +17,4 @@ const detallesSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Listados", detallesSchema);
+module.exports = mongoose.model("Detalles", detallesSchema);

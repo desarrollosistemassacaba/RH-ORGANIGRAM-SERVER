@@ -368,7 +368,8 @@ function validarRegistro(requerido = true, actualizar = false) {
       requerido: false,
       lista: ["MD", "MR", "MA", "CO"],
     }),
-    validarCampo("numero_contrato", { requerido: false, longitudMaxima: 50 }),
+    validarCampo("cite", { requerido: false, longitudMaxima: 50 }),
+    validarCampo("numero_contrato", { requerido: false, longitudMaxima: 10 }),
     validarCampo("historico", {
       requerido: false,
       tipoArray: true,

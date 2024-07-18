@@ -45,10 +45,15 @@ const registroSchema = new mongoose.Schema({
     uppercase: true,
     enum: ["MD", "MR", "MA", "CO"],
   },
+  cite: {
+    type: String,
+    uppercase: true,
+    maxlength: [50, "No debe exceder los 50 caracteres."],
+  },
   numero_contrato: {
     type: String,
     uppercase: true,
-    maxlength: [50, "No debe exceder los 10 caracteres."],
+    maxlength: [10, "No debe exceder los 10 caracteres."],
   },
   descripcion: {
     type: String,
