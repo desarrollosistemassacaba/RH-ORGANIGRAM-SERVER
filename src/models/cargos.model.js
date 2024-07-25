@@ -26,6 +26,19 @@ const cargoSchema = new mongoose.Schema({
     uppercase: true,
     enum: ["SUPERIOR", "EJECUTIVO", "OPERATIVO"],
   },
+  clasificacion: {
+    type: String,
+    maxlength: [
+      15,
+      "La clasificacion de cargo no debe exceder los 15 caracteres.",
+    ],
+    uppercase: true,
+  },
+  clase: {
+    type: String,
+    maxlength: [10, "La clase de cargo no debe exceder los 10 caracteres."],
+    uppercase: true,
+  },
   rotacion: {
     type: Boolean,
     default: false,

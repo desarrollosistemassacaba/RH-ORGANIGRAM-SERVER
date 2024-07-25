@@ -288,6 +288,8 @@ function validarCargo(requerido = true /*, actualizar = false*/) {
       requerido: false,
       lista: ["SUPERIOR", "EJECUTIVO", "OPERATIVO"],
     }),
+    validarCampo("clasificacion", { requerido: false, longitudMaxima: 15 }),
+    validarCampo("clase", { requerido: false, longitudMaxima: 10 }),
     validarCampo("rotacion", { requerido: false, tipoBooleano: true }),
     validarCampo("registro", {
       requerido,

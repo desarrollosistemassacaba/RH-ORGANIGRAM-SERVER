@@ -2,9 +2,9 @@
   "name": "server",
   "version": "1.0.0",
   "description": "sistema de gestion administrativo de RRHH",
-  "main": "index.js",
+  "main": "organigram.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon organigram.js"
   },
   "author": "Ramzeb",
   "license": "ISC",
