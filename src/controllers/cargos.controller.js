@@ -1,7 +1,7 @@
 const Cargo = require("../models/cargos.model");
 const controller = require("./controller");
 
-const referencia = ["id_nivel_salarial", "id_dependencia"];
+const referencia = ["id_nivel_salarial", "id_dependencia", "id_partida"];
 
 const valores = {
   nombre: 1,
@@ -22,13 +22,28 @@ const changeMap = {
 };
 
 async function getElementos(req, res) {
+  const values = {
+    nombre: 1,
+    contrato: 1,
+    registro: 1,
+    estado: 1,
+    categoria: 1,
+    denominacion: 1,
+    id_nivel_salarial: 1,
+    duracion_contrato: 1,
+    id_partida: 1,
+    id_unidad: 1,
+    id_dependencia: 1,
+    cargo_principal: 1,
+    id_cargo_superior: 1,
+  };
   await controller.getAll(
     Cargo,
     req,
     res,
     "cargos",
     referencia,
-    valores,
+    values,
     changeMap
   );
 }
