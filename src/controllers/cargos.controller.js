@@ -29,6 +29,7 @@ async function getElementos(req, res) {
     estado: 1,
     categoria: 1,
     denominacion: 1,
+    objetivo: 1,
     id_nivel_salarial: 1,
     duracion_contrato: 1,
     id_partida: 1,
