@@ -1,7 +1,7 @@
 const Cargo = require("../models/cargos.model");
 const controller = require("./controller");
 
-const referencia = [];
+const referencia = ["id_nivel_salarial"];
 
 const valores = {
   nombre: 1,
@@ -11,7 +11,9 @@ const valores = {
   id_cargo_superior: 1,
 };
 //enviamos valores para cambiarlos, es decir, id_nivel_salarial.nombre pasara a llamarse nivel y su valor tambien se enviara a nivel, lo mismo para sigla,. Teniendo en cuenta que es opcional el cambio.
-const changeMap = {};
+const changeMap = {
+  id_nivel_salarial: { field: "nivel", prop: "nombre" },
+};
 
 async function getElementos(req, res) {
   await controller.getAll(
