@@ -209,10 +209,10 @@ function validarFuncionario(requerido = true, actualizar = false) {
       longitudMinima: 1,
       longitudMaxima: 2,
     }),
-    validarCampo("expedido", {
-      requerido: false,
-      lista: ["LP", "SC", "CB", "PT", "OR", "TJ", "CH", "BN", "PA"],
-    }),
+    // validarCampo("expedido", {
+    //   requerido: false,
+    //   lista: ["LP", "SC", "CB", "PT", "OR", "TJ", "CH", "BN", "PA"],
+    // }),
     validarCampo("genero", { requerido, lista: ["M", "F"] }),
     validarCampo("fecha_nacimiento", { requerido, formatoFecha: true }),
     validarCampo("telefono", {

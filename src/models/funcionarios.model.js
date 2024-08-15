@@ -39,13 +39,13 @@ const funcionarioSchema = new mongoose.Schema({
     uppercase: true,
     maxlength: [2, "La extensión no puede exceder los 2 caracteres."],
   },
-  expedido: {
-    type: String,
-    //require: [true, "El campo expedido es requerido"],
-    uppercase: true,
-    maxlength: [2, "El campo expedido no debe exceder los 3 caracteres"],
-    enum: ["LP", "SC", "CB", "PT", "OR", "TJ", "CH", "BN", "PA"],
-  },
+  //   expedido: {
+  //     type: String,
+  //     //require: [true, "El campo expedido es requerido"],
+  //     uppercase: true,
+  //     maxlength: [2, "El campo expedido no debe exceder los 3 caracteres"],
+  //     enum: ["LP", "SC", "CB", "PT", "OR", "TJ", "CH", "BN", "PA"],
+  //   },
   genero: {
     type: String,
     required: [true, "El género es requerido."],
