@@ -1,4 +1,5 @@
 const Cargo = require("../models/cargos.model");
+const Registro = require("../models/registros.model");
 const controller = require("./controller");
 
 const referencia = ["id_nivel_salarial"];
@@ -27,7 +28,10 @@ async function getElementos(req, res) {
   );
 }
 
+//valores para obtener el registro de funcionarios
 async function getElemento(req, res) {
+  const reference = ["id_cargo", "id_funcionario", "historico.id_cargo"];
+  await controller.getById(Registro, req, res, "Registro", reference);
   //   const referencia = [
   //     "id_partida",
   //     "id_nivel_salarial",
